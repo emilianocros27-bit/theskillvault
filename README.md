@@ -2,4 +2,7 @@
 
 Colección de skills para Claude por categoría, con ejemplos y packs para copiar.
 
-Se publica en Cloudflare Workers desde la carpeta `public/`.
+En línea: https://theskillvault.emicros.workers.dev
+
+- `public/`: la página y sus ejemplos.
+- `worker/index.js`: el Worker de Cloudflare que sirve `public/` desde este repo. Los cambios que se suben a `main` aparecen en la página en unos 5 minutos.
