@@ -1,0 +1,3 @@
+import { createIcon } from '@animateicons/vanilla';
+import { Search, PanelLeft, X, LayoutDashboard, FileText, Palette, ChartLine, Clapperboard, CodeXml, PenTool, Telescope, Blocks, Copy, Check, ArrowLeft, ArrowRight, ExternalLink, LoaderCircle, ShieldCheck, Gamepad, Bot, Megaphone, Briefcase, Gauge, SquareTerminal, Box } from '@animateicons/vanilla/lucide';
+window.AI = { createIcon, icons: { Search, PanelLeft, X, LayoutDashboard, FileText, Palette, ChartLine, Clapperboard, CodeXml, PenTool, Telescope, Blocks, Copy, Check, ArrowLeft, ArrowRight, ExternalLink, LoaderCircle, ShieldCheck, Gamepad, Bot, Megaphone, Briefcase, Gauge, SquareTerminal, Box } };
