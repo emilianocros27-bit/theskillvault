@@ -1,5 +1,5 @@
 import pathlib, hashlib, base64, re, sys
-B = pathlib.Path('build'); page = (B/'page.html').read_text(); esc = lambda t: t.replace('</script', '<\\/script')
+B = pathlib.Path('src'); page = (B/'page.html').read_text(); esc = lambda t: t.replace('</script', '<\\/script')
 def sri(p): return 'sha384-' + base64.b64encode(hashlib.sha384((B/p).read_bytes()).digest()).decode()
 tags = ''.join(f'<script src="https://cdn.jsdelivr.net/npm/{pkg}@18.3.1/umd/{f}" integrity="{sri("node_modules/"+pkg+"/umd/"+f)}" crossorigin="anonymous" referrerpolicy="no-referrer"></script>\n' for pkg, f in [('react', 'react.production.min.js'), ('react-dom', 'react-dom.production.min.js')])
 i = page.index('/*APP_BUNDLE*/'); a = page.rindex('<script', 0, i); page = page[:a] + tags + page[a:]
