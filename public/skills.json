@@ -1,0 +1,966 @@
+{
+ "carpetas": [
+  {
+   "id": "web",
+   "nombre": "Diseño web",
+   "descripcion": "Interfaces con dirección de arte, auditoría visual y movimiento.",
+   "skills": 5
+  },
+  {
+   "id": "doc",
+   "nombre": "Documentos",
+   "descripcion": "Word, PowerPoint, Excel y PDF reales, con formato y fórmulas.",
+   "skills": 4
+  },
+  {
+   "id": "art",
+   "nombre": "Arte y visual",
+   "descripcion": "Pósters, arte generativo, temas de color y GIFs animados.",
+   "skills": 4
+  },
+  {
+   "id": "data",
+   "nombre": "Datos y gráficas",
+   "descripcion": "Gráficas interactivas y figuras listas para publicar.",
+   "skills": 4
+  },
+  {
+   "id": "video",
+   "nombre": "Video y animación",
+   "descripcion": "Videos hechos con código, subtítulos y movimiento en la interfaz.",
+   "skills": 5
+  },
+  {
+   "id": "3d",
+   "nombre": "Diseño 3D",
+   "descripcion": "Escenas 3D en la web, shaders, modelado en Blender y piezas para imprimir en 3D.",
+   "skills": 5
+  },
+  {
+   "id": "code",
+   "nombre": "Programación",
+   "descripcion": "Método antes del código: plan, pruebas, depuración y revisión.",
+   "skills": 5
+  },
+  {
+   "id": "write",
+   "nombre": "Escritura",
+   "descripcion": "Textos de venta, SEO, comunicación interna y prosa sin tics de IA.",
+   "skills": 4
+  },
+  {
+   "id": "research",
+   "nombre": "Investigación y planes",
+   "descripcion": "Estudios de mercado, planes de trabajo y documentos escritos en equipo.",
+   "skills": 4
+  },
+  {
+   "id": "build",
+   "nombre": "Crear con Claude",
+   "descripcion": "Para construir tus propias skills, conectores y apps con Claude.",
+   "skills": 4
+  },
+  {
+   "id": "dev",
+   "nombre": "Claude Code",
+   "descripcion": "Reglas para que escriba menos y mejor código, entrevistas antes de programar y frenos de seguridad.",
+   "skills": 5
+  },
+  {
+   "id": "tokens",
+   "nombre": "Ahorro de tokens",
+   "descripcion": "Respuestas cortas, memoria comprimida y sesiones que se pasan en limpio.",
+   "skills": 4
+  },
+  {
+   "id": "agents",
+   "nombre": "Agentes dev",
+   "descripcion": "Proyectos grandes repartidos entre agentes: planes, tareas en paralelo y espacios aislados.",
+   "skills": 5
+  },
+  {
+   "id": "mkt",
+   "nombre": "Marketing y videos",
+   "descripcion": "Ganchos virales, guiones para TikTok y Reels, anuncios y calendario de redes.",
+   "skills": 5
+  },
+  {
+   "id": "biz",
+   "nombre": "Negocio con IA",
+   "descripcion": "Agentes que ordenan el día a día: correo, clientes, prospectos y el pulso del negocio.",
+   "skills": 5
+  },
+  {
+   "id": "sec",
+   "nombre": "Ciberseguridad",
+   "descripcion": "Revisión de seguridad, escaneo de código, dependencias y protección contra bots.",
+   "skills": 5
+  },
+  {
+   "id": "game",
+   "nombre": "Videojuegos",
+   "descripcion": "Juegos en el navegador, Roblox y Godot, y la sensación de cada golpe.",
+   "skills": 5
+  }
+ ],
+ "skills": [
+  {
+   "id": "frontend-design",
+   "carpeta": "web",
+   "autor": "Anthropic",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/anthropics/skills",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/skills/main/skills/frontend-design/SKILL.md",
+   "instalar": "npx skills add anthropics/skills --skill frontend-design",
+   "descripcion": "Hace que Claude elija tipografía, color y composición con intención antes de escribir código.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "taste-skill",
+   "carpeta": "web",
+   "autor": "Leonxlnx",
+   "donde": "Claude Code",
+   "repo": "https://github.com/Leonxlnx/taste-skill",
+   "skill_md": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md",
+   "instalar": "npx skills add Leonxlnx/taste-skill --skill \"design-taste-frontend\"",
+   "descripcion": "Elige una dirección de arte estudiada en 247 sitios de galería y descarta el look genérico de IA.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "impeccable",
+   "carpeta": "web",
+   "autor": "Paul Bakaus",
+   "donde": "Claude Code",
+   "repo": "https://github.com/pbakaus/impeccable",
+   "skill_md": "https://raw.githubusercontent.com/pbakaus/impeccable/main/.claude/skills/impeccable/SKILL.md",
+   "instalar": "npx skills add pbakaus/impeccable",
+   "descripcion": "Comandos para auditar, criticar y pulir una interfaz: /impeccable audit, typeset, bolder, quieter, polish.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "ui-ux-pro-max",
+   "carpeta": "web",
+   "autor": "nextlevelbuilder",
+   "donde": "Claude Code · necesita Python",
+   "repo": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+   "skill_md": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/main/.claude/skills/ui-ux-pro-max/SKILL.md",
+   "instalar": "npx skills add nextlevelbuilder/ui-ux-pro-max-skill",
+   "descripcion": "Base de datos de diseño: busca paleta, fuentes y estilo según el tipo de producto.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "emil-design-eng",
+   "carpeta": "web",
+   "autor": "Emil Kowalski",
+   "donde": "Claude Code",
+   "repo": "https://github.com/emilkowalski/skills",
+   "skill_md": "https://raw.githubusercontent.com/emilkowalski/skills/main/skills/emil-design-eng/SKILL.md",
+   "instalar": "npx skills add emilkowalski/skills --skill emil-design-eng",
+   "descripcion": "Obliga a justificar cada animación: si debe existir, su curva, su duración y cómo se interrumpe.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "docx",
+   "carpeta": "doc",
+   "autor": "Anthropic",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/anthropics/skills",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/skills/main/skills/docx/SKILL.md",
+   "instalar": "npx skills add anthropics/skills --skill docx",
+   "descripcion": "Crea y edita documentos de Word con encabezados, índice, tablas, números de página y control de cambios.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "pptx",
+   "carpeta": "doc",
+   "autor": "Anthropic",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/anthropics/skills",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/skills/main/skills/pptx/SKILL.md",
+   "instalar": "npx skills add anthropics/skills --skill pptx",
+   "descripcion": "Arma presentaciones de PowerPoint desde cero o edita las existentes, con gráficas y diseño consistente.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "xlsx",
+   "carpeta": "doc",
+   "autor": "Anthropic",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/anthropics/skills",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/skills/main/skills/xlsx/SKILL.md",
+   "instalar": "npx skills add anthropics/skills --skill xlsx",
+   "descripcion": "Hojas de Excel con fórmulas reales, formato y convenciones de modelo: entradas en azul, fórmulas en negro.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "pdf",
+   "carpeta": "doc",
+   "autor": "Anthropic",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/anthropics/skills",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/skills/main/skills/pdf/SKILL.md",
+   "instalar": "npx skills add anthropics/skills --skill pdf",
+   "descripcion": "Lee, une, divide y llena formularios PDF; también extrae tablas y aplica OCR a escaneos.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "canvas-design",
+   "carpeta": "art",
+   "autor": "Anthropic",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/anthropics/skills",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/skills/main/skills/canvas-design/SKILL.md",
+   "instalar": "npx skills add anthropics/skills --skill canvas-design",
+   "descripcion": "Pósters y piezas estáticas en PNG o PDF a partir de una filosofía de diseño escrita primero.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "algorithmic-art",
+   "carpeta": "art",
+   "autor": "Anthropic",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/anthropics/skills",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/skills/main/skills/algorithmic-art/SKILL.md",
+   "instalar": "npx skills add anthropics/skills --skill algorithmic-art",
+   "descripcion": "Arte generativo con p5.js: campos de flujo y partículas con semillas reproducibles.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "theme-factory",
+   "carpeta": "art",
+   "autor": "Anthropic",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/anthropics/skills",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/skills/main/skills/theme-factory/SKILL.md",
+   "instalar": "npx skills add anthropics/skills --skill theme-factory",
+   "descripcion": "Diez temas de color y fuente listos para aplicar a cualquier artifact, o uno nuevo hecho al momento.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "slack-gif-creator",
+   "carpeta": "art",
+   "autor": "Anthropic",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/anthropics/skills",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/skills/main/skills/slack-gif-creator/SKILL.md",
+   "instalar": "npx skills add anthropics/skills --skill slack-gif-creator",
+   "descripcion": "GIFs animados que cumplen los límites de Slack: 128 × 128 para emoji, pocos colores y peso bajo.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "brainstorming",
+   "carpeta": "code",
+   "autor": "Jesse Vincent",
+   "donde": "Claude Code",
+   "repo": "https://github.com/obra/superpowers",
+   "skill_md": "https://raw.githubusercontent.com/obra/superpowers/main/skills/brainstorming/SKILL.md",
+   "instalar": "npx skills add obra/superpowers --skill brainstorming",
+   "descripcion": "Antes de construir, Claude pregunta una cosa a la vez hasta tener un diseño que apruebas.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "test-driven-development",
+   "carpeta": "code",
+   "autor": "Jesse Vincent",
+   "donde": "Claude Code",
+   "repo": "https://github.com/obra/superpowers",
+   "skill_md": "https://raw.githubusercontent.com/obra/superpowers/main/skills/test-driven-development/SKILL.md",
+   "instalar": "npx skills add obra/superpowers --skill test-driven-development",
+   "descripcion": "Ninguna línea de código sin una prueba que falle primero: rojo, verde, refactor.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "systematic-debugging",
+   "carpeta": "code",
+   "autor": "Jesse Vincent",
+   "donde": "Claude Code",
+   "repo": "https://github.com/obra/superpowers",
+   "skill_md": "https://raw.githubusercontent.com/obra/superpowers/main/skills/systematic-debugging/SKILL.md",
+   "instalar": "npx skills add obra/superpowers --skill systematic-debugging",
+   "descripcion": "Cuatro fases para encontrar la causa real de un error antes de tocar el código.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "webapp-testing",
+   "carpeta": "code",
+   "autor": "Anthropic",
+   "donde": "Claude Code",
+   "repo": "https://github.com/anthropics/skills",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/skills/main/skills/webapp-testing/SKILL.md",
+   "instalar": "npx skills add anthropics/skills --skill webapp-testing",
+   "descripcion": "Abre tu página en un navegador con Playwright, la prueba, toma capturas y lee los errores.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "web-design-guidelines",
+   "carpeta": "code",
+   "autor": "Vercel",
+   "donde": "Claude Code",
+   "repo": "https://github.com/vercel-labs/agent-skills",
+   "skill_md": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/web-design-guidelines/SKILL.md",
+   "instalar": "npx skills add vercel-labs/agent-skills --skill web-design-guidelines",
+   "descripcion": "Revisa tu código contra más de 100 reglas de interfaz de Vercel y reporta cada problema por archivo y línea.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "copywriting",
+   "carpeta": "write",
+   "autor": "Corey Haines",
+   "donde": "Claude Code",
+   "repo": "https://github.com/coreyhaines31/marketingskills",
+   "skill_md": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/main/skills/copywriting/SKILL.md",
+   "instalar": "npx skills add coreyhaines31/marketingskills --skill copywriting",
+   "descripcion": "Escribe o reescribe textos de venta: titulares, propuestas de valor y botones, con variantes para probar.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "seo-audit",
+   "carpeta": "write",
+   "autor": "Corey Haines",
+   "donde": "Claude Code",
+   "repo": "https://github.com/coreyhaines31/marketingskills",
+   "skill_md": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/main/skills/seo-audit/SKILL.md",
+   "instalar": "npx skills add coreyhaines31/marketingskills --skill seo-audit",
+   "descripcion": "Diagnostica por qué un sitio no posiciona y ordena los arreglos por impacto.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "humanizer",
+   "carpeta": "write",
+   "autor": "blader",
+   "donde": "Claude Code",
+   "repo": "https://github.com/blader/humanizer",
+   "skill_md": "https://raw.githubusercontent.com/blader/humanizer/main/SKILL.md",
+   "instalar": "npx skills add blader/humanizer",
+   "descripcion": "Reescribe texto que suena a IA para que suene a quien lo escribe, sin cambiar lo que dice.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "internal-comms",
+   "carpeta": "write",
+   "autor": "Anthropic",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/anthropics/skills",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/skills/main/skills/internal-comms/SKILL.md",
+   "instalar": "npx skills add anthropics/skills --skill internal-comms",
+   "descripcion": "Reportes de avance, boletines, FAQs y reportes de incidentes en los formatos que usa tu empresa.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "skill-creator",
+   "carpeta": "build",
+   "autor": "Anthropic",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/anthropics/skills",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/skills/main/skills/skill-creator/SKILL.md",
+   "instalar": "npx skills add anthropics/skills --skill skill-creator",
+   "descripcion": "Crea skills nuevas, las mejora y mide si de verdad ayudan comparando resultados con y sin la skill.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "mcp-builder",
+   "carpeta": "build",
+   "autor": "Anthropic",
+   "donde": "Claude Code",
+   "repo": "https://github.com/anthropics/skills",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/skills/main/skills/mcp-builder/SKILL.md",
+   "instalar": "npx skills add anthropics/skills --skill mcp-builder",
+   "descripcion": "Guía para construir servidores MCP que conectan a Claude con APIs y servicios externos.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "claude-api",
+   "carpeta": "build",
+   "autor": "Anthropic",
+   "donde": "Claude Code",
+   "repo": "https://github.com/anthropics/skills",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/skills/main/skills/claude-api/SKILL.md",
+   "instalar": "npx skills add anthropics/skills --skill claude-api",
+   "descripcion": "Referencia de la API de Claude: modelos, streaming, herramientas, caché y agentes.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "web-artifacts-builder",
+   "carpeta": "build",
+   "autor": "Anthropic",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/anthropics/skills",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/skills/main/skills/web-artifacts-builder/SKILL.md",
+   "instalar": "npx skills add anthropics/skills --skill web-artifacts-builder",
+   "descripcion": "Artifacts de varios componentes con React, Tailwind y shadcn/ui, empaquetados en un solo archivo.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "d3-viz",
+   "carpeta": "data",
+   "autor": "Chris von Csefalvay",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+   "skill_md": "https://raw.githubusercontent.com/chrisvoncsefalvay/claude-d3js-skill/main/SKILL.md",
+   "instalar": "npx skills add chrisvoncsefalvay/claude-d3js-skill",
+   "descripcion": "Gráficas interactivas con d3.js: escalas, ejes, tooltips, transiciones y tamaño adaptable.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "matplotlib",
+   "carpeta": "data",
+   "autor": "K-Dense",
+   "donde": "Claude Code",
+   "repo": "https://github.com/K-Dense-AI/claude-scientific-skills",
+   "skill_md": "https://raw.githubusercontent.com/K-Dense-AI/claude-scientific-skills/main/skills/matplotlib/SKILL.md",
+   "instalar": "npx skills add K-Dense-AI/claude-scientific-skills --skill matplotlib",
+   "descripcion": "Figuras con control fino de cada elemento: ejes dobles, anotaciones y exportación en PNG, PDF o SVG.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "seaborn",
+   "carpeta": "data",
+   "autor": "K-Dense",
+   "donde": "Claude Code",
+   "repo": "https://github.com/K-Dense-AI/claude-scientific-skills",
+   "skill_md": "https://raw.githubusercontent.com/K-Dense-AI/claude-scientific-skills/main/skills/seaborn/SKILL.md",
+   "instalar": "npx skills add K-Dense-AI/claude-scientific-skills --skill seaborn",
+   "descripcion": "Gráficas estadísticas desde tablas de pandas: distribuciones, comparaciones y relaciones.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "scientific-visualization",
+   "carpeta": "data",
+   "autor": "K-Dense",
+   "donde": "Claude Code",
+   "repo": "https://github.com/K-Dense-AI/claude-scientific-skills",
+   "skill_md": "https://raw.githubusercontent.com/K-Dense-AI/claude-scientific-skills/main/skills/scientific-visualization/SKILL.md",
+   "instalar": "npx skills add K-Dense-AI/claude-scientific-skills --skill scientific-visualization",
+   "descripcion": "Figuras honestas y accesibles: nunca altera datos, revisa color, contraste e incertidumbre.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "remotion-best-practices",
+   "carpeta": "video",
+   "autor": "Remotion",
+   "donde": "Claude Code",
+   "repo": "https://github.com/remotion-dev/skills",
+   "skill_md": "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion-best-practices/SKILL.md",
+   "instalar": "npx skills add remotion-dev/skills --skill remotion-best-practices",
+   "descripcion": "La puerta de entrada a las skills de Remotion: decide qué guía cargar según el video que pidas.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "remotion-create",
+   "carpeta": "video",
+   "autor": "Remotion",
+   "donde": "Claude Code",
+   "repo": "https://github.com/remotion-dev/skills",
+   "skill_md": "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion-create/SKILL.md",
+   "instalar": "npx skills add remotion-dev/skills --skill remotion-create",
+   "descripcion": "Crea un proyecto y una composición de video en React, lista para previsualizar y exportar.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "remotion-captions",
+   "carpeta": "video",
+   "autor": "Remotion",
+   "donde": "Claude Code",
+   "repo": "https://github.com/remotion-dev/skills",
+   "skill_md": "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion-captions/SKILL.md",
+   "instalar": "npx skills add remotion-dev/skills --skill remotion-captions",
+   "descripcion": "Transcribe el audio y anima los subtítulos palabra por palabra.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "animate",
+   "carpeta": "video",
+   "autor": "Emil Kowalski",
+   "donde": "Claude Code",
+   "repo": "https://github.com/emilkowalski/skills",
+   "skill_md": "https://raw.githubusercontent.com/emilkowalski/skills/main/skills/animate/SKILL.md",
+   "instalar": "npx skills add emilkowalski/skills --skill animate",
+   "descripcion": "Construye una animación de interfaz decidiendo en orden: propósito, herramienta, propiedades, curva y duración.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "motion",
+   "carpeta": "video",
+   "autor": "secondsky",
+   "donde": "Claude Code",
+   "repo": "https://github.com/secondsky/claude-skills",
+   "skill_md": "https://raw.githubusercontent.com/secondsky/claude-skills/main/plugins/motion/skills/motion/SKILL.md",
+   "instalar": "npx skills add secondsky/claude-skills --skill motion",
+   "descripcion": "Animaciones en React con Motion (antes Framer Motion): arrastrar, gestos, scroll, resortes y transiciones de salida.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "market-research-reports",
+   "carpeta": "research",
+   "autor": "K-Dense",
+   "donde": "Claude Code",
+   "repo": "https://github.com/K-Dense-AI/claude-scientific-skills",
+   "skill_md": "https://raw.githubusercontent.com/K-Dense-AI/claude-scientific-skills/main/skills/market-research-reports/SKILL.md",
+   "instalar": "npx skills add K-Dense-AI/claude-scientific-skills --skill market-research-reports",
+   "descripcion": "Estudios de mercado con cada dato rastreable a su fuente y el tamaño de mercado como escenarios.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "writing-plans",
+   "carpeta": "research",
+   "autor": "Jesse Vincent",
+   "donde": "Claude Code",
+   "repo": "https://github.com/obra/superpowers",
+   "skill_md": "https://raw.githubusercontent.com/obra/superpowers/main/skills/writing-plans/SKILL.md",
+   "instalar": "npx skills add obra/superpowers --skill writing-plans",
+   "descripcion": "Convierte una idea aprobada en un plan de tareas pequeñas, con archivos, pasos y pruebas.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "doc-coauthoring",
+   "carpeta": "research",
+   "autor": "Anthropic",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/anthropics/skills",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/skills/main/skills/doc-coauthoring/SKILL.md",
+   "instalar": "npx skills add anthropics/skills --skill doc-coauthoring",
+   "descripcion": "Escribe documentos contigo en tres etapas: reunir contexto, estructurar y probarlo con un lector.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "find-skills",
+   "carpeta": "research",
+   "autor": "Vercel",
+   "donde": "Claude Code",
+   "repo": "https://github.com/vercel-labs/skills",
+   "skill_md": "https://raw.githubusercontent.com/vercel-labs/skills/main/skills/find-skills/SKILL.md",
+   "instalar": "npx skills add vercel-labs/skills --skill find-skills",
+   "descripcion": "Cuando no sabes qué skill usar, Claude busca e instala la que sirve para tu tarea.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "security-review",
+   "carpeta": "sec",
+   "autor": "Anthropic",
+   "donde": "Claude Code (ya incluido)",
+   "repo": "https://github.com/anthropics/claude-code-security-review",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/claude-code-security-review/main/.claude/commands/security-review.md",
+   "instalar": "Ya viene en Claude Code: escribe /security-review",
+   "descripcion": "Revisa tus cambios pendientes en busca de vulnerabilidades y explica cómo arreglar cada una.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "semgrep",
+   "carpeta": "sec",
+   "autor": "Trail of Bits",
+   "donde": "Claude Code",
+   "repo": "https://github.com/trailofbits/skills",
+   "skill_md": "https://raw.githubusercontent.com/trailofbits/skills/main/plugins/static-analysis/skills/semgrep/SKILL.md",
+   "instalar": "npx skills add trailofbits/skills --skill semgrep",
+   "descripcion": "Escanea tu código con Semgrep: elige las reglas por lenguaje, te muestra el plan y espera tu aprobación.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "supply-chain-risk-auditor",
+   "carpeta": "sec",
+   "autor": "Trail of Bits",
+   "donde": "Claude Code",
+   "repo": "https://github.com/trailofbits/skills",
+   "skill_md": "https://raw.githubusercontent.com/trailofbits/skills/main/plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor/SKILL.md",
+   "instalar": "npx skills add trailofbits/skills --skill supply-chain-risk-auditor",
+   "descripcion": "Revisa tus dependencias: avisos de seguridad, proyectos abandonados y scripts que se ejecutan al instalar.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "turnstile-spin",
+   "carpeta": "sec",
+   "autor": "Cloudflare",
+   "donde": "Claude Code",
+   "repo": "https://github.com/cloudflare/skills",
+   "skill_md": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/turnstile-spin/SKILL.md",
+   "instalar": "npx skills add cloudflare/skills --skill turnstile-spin",
+   "descripcion": "Agrega Cloudflare Turnstile a tus formularios para frenar bots, con verificación del lado del servidor.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "threejs",
+   "carpeta": "3d",
+   "autor": "secondsky",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/secondsky/claude-skills",
+   "skill_md": "https://raw.githubusercontent.com/secondsky/claude-skills/main/plugins/threejs/skills/threejs/SKILL.md",
+   "instalar": "npx skills add secondsky/claude-skills --skill threejs",
+   "descripcion": "Escenas 3D en la web con Three.js: geometría, materiales, luces, modelos GLTF, animación e interacción.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "r3f-best-practices",
+   "carpeta": "3d",
+   "autor": "Emanuel Lorenzo",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/emalorenzo/three-agent-skills",
+   "skill_md": "https://raw.githubusercontent.com/emalorenzo/three-agent-skills/main/skills/r3f-best-practices/SKILL.md",
+   "instalar": "npx skills add emalorenzo/three-agent-skills --skill r3f-best-practices",
+   "descripcion": "Más de 70 reglas de rendimiento para React Three Fiber, drei y el ecosistema de Poimandres.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "r3f-shaders",
+   "carpeta": "3d",
+   "autor": "enzed",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/enzed/r3f-skills",
+   "skill_md": "https://raw.githubusercontent.com/enzed/r3f-skills/main/skills/r3f-shaders/SKILL.md",
+   "instalar": "npx skills add enzed/r3f-skills --skill r3f-shaders",
+   "descripcion": "Materiales con shaders propios en GLSL o TSL: uniforms, deformación de vértices y depuración.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "blender-modeling",
+   "carpeta": "3d",
+   "autor": "RobLe3",
+   "donde": "Claude Code",
+   "repo": "https://github.com/roble3/cc-blender-skill",
+   "skill_md": "https://raw.githubusercontent.com/roble3/cc-blender-skill/main/plugin/skills/blender-modeling/SKILL.md",
+   "instalar": "npx skills add roble3/cc-blender-skill --skill blender-modeling",
+   "descripcion": "Modela en Blender desde el chat: primitivas, modificadores, booleanas y retopología. Necesita Blender MCP.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "openscad",
+   "carpeta": "3d",
+   "autor": "Armin Ronacher",
+   "donde": "Claude Code",
+   "repo": "https://github.com/mitsuhiko/agent-stuff",
+   "skill_md": "https://raw.githubusercontent.com/mitsuhiko/agent-stuff/main/skills/openscad/SKILL.md",
+   "instalar": "npx skills add mitsuhiko/agent-stuff --skill openscad",
+   "descripcion": "Modelos 3D con medidas exactas en OpenSCAD: vistas previas, parámetros editables y STL para imprimir.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "karpathy-guidelines",
+   "carpeta": "dev",
+   "autor": "Forrest Chang",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/forrestchang/andrej-karpathy-skills",
+   "skill_md": "https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/skills/karpathy-guidelines/SKILL.md",
+   "instalar": "npx skills add forrestchang/andrej-karpathy-skills --skill karpathy-guidelines",
+   "descripcion": "Cuatro reglas basadas en Andrej Karpathy: decir sus dudas, el código mínimo, cambios quirúrgicos y una meta comprobable.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "grilling",
+   "carpeta": "dev",
+   "autor": "Matt Pocock",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/mattpocock/skills",
+   "skill_md": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/productivity/grilling/SKILL.md",
+   "instalar": "npx skills add mattpocock/skills --skill grilling",
+   "descripcion": "Te hace pregunta tras pregunta sobre tu plan antes de escribir código, hasta que no quedan huecos.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "code-review",
+   "carpeta": "dev",
+   "autor": "Matt Pocock",
+   "donde": "Claude Code",
+   "repo": "https://github.com/mattpocock/skills",
+   "skill_md": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/engineering/code-review/SKILL.md",
+   "instalar": "npx skills add mattpocock/skills --skill code-review",
+   "descripcion": "Revisa tus cambios en dos frentes a la vez: si siguen las reglas del proyecto y si hacen lo que pedía la tarea.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "git-guardrails-claude-code",
+   "carpeta": "dev",
+   "autor": "Matt Pocock",
+   "donde": "Claude Code",
+   "repo": "https://github.com/mattpocock/skills",
+   "skill_md": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/misc/git-guardrails-claude-code/SKILL.md",
+   "instalar": "npx skills add mattpocock/skills --skill git-guardrails-claude-code",
+   "descripcion": "Instala un freno que bloquea comandos de git peligrosos, como push o reset --hard, antes de que corran.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "vercel-react-best-practices",
+   "carpeta": "dev",
+   "autor": "Vercel",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/vercel-labs/agent-skills",
+   "skill_md": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-best-practices/SKILL.md",
+   "instalar": "npx skills add vercel-labs/agent-skills --skill vercel-react-best-practices",
+   "descripcion": "Reglas de rendimiento para React y Next.js ordenadas por impacto, de Vercel.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "caveman",
+   "carpeta": "tokens",
+   "autor": "Julius Brussee",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/JuliusBrussee/caveman",
+   "skill_md": "https://raw.githubusercontent.com/JuliusBrussee/caveman/main/skills/caveman/SKILL.md",
+   "instalar": "npx skills add JuliusBrussee/caveman --skill caveman",
+   "descripcion": "Claude contesta directo y sin relleno, pero conserva el código, los comandos y los datos exactos.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "caveman-compress",
+   "carpeta": "tokens",
+   "autor": "Julius Brussee",
+   "donde": "Claude Code",
+   "repo": "https://github.com/JuliusBrussee/caveman",
+   "skill_md": "https://raw.githubusercontent.com/JuliusBrussee/caveman/main/skills/caveman-compress/SKILL.md",
+   "instalar": "npx skills add JuliusBrussee/caveman --skill caveman-compress",
+   "descripcion": "Comprime tu CLAUDE.md u otros archivos que Claude lee en cada mensaje, y guarda una copia del original.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "handoff",
+   "carpeta": "tokens",
+   "autor": "Matt Pocock",
+   "donde": "Claude Code",
+   "repo": "https://github.com/mattpocock/skills",
+   "skill_md": "https://raw.githubusercontent.com/mattpocock/skills/main/skills/productivity/handoff/SKILL.md",
+   "instalar": "npx skills add mattpocock/skills --skill handoff",
+   "descripcion": "Resume la conversación en un documento para seguir en una sesión nueva sin cargar todo el historial.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "context-mode",
+   "carpeta": "tokens",
+   "autor": "Mert Köseoğlu",
+   "donde": "Claude Code",
+   "repo": "https://github.com/mksglu/context-mode",
+   "skill_md": "https://raw.githubusercontent.com/mksglu/context-mode/main/skills/context-mode/SKILL.md",
+   "instalar": "/plugin marketplace add mksglu/context-mode",
+   "descripcion": "Procesa logs, JSON y salidas grandes fuera del chat y solo le pasa a Claude el resumen.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "subagent-driven-development",
+   "carpeta": "agents",
+   "autor": "Jesse Vincent",
+   "donde": "Claude Code",
+   "repo": "https://github.com/obra/superpowers",
+   "skill_md": "https://raw.githubusercontent.com/obra/superpowers/main/skills/subagent-driven-development/SKILL.md",
+   "instalar": "npx skills add obra/superpowers --skill subagent-driven-development",
+   "descripcion": "Ejecuta un plan dando cada tarea a un subagente nuevo, con revisión de especificación y de código antes de seguir.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "dispatching-parallel-agents",
+   "carpeta": "agents",
+   "autor": "Jesse Vincent",
+   "donde": "Claude Code",
+   "repo": "https://github.com/obra/superpowers",
+   "skill_md": "https://raw.githubusercontent.com/obra/superpowers/main/skills/dispatching-parallel-agents/SKILL.md",
+   "instalar": "npx skills add obra/superpowers --skill dispatching-parallel-agents",
+   "descripcion": "Cuando hay varias tareas independientes, lanza un agente por tarea al mismo tiempo y junta los resultados.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "executing-plans",
+   "carpeta": "agents",
+   "autor": "Jesse Vincent",
+   "donde": "Claude Code",
+   "repo": "https://github.com/obra/superpowers",
+   "skill_md": "https://raw.githubusercontent.com/obra/superpowers/main/skills/executing-plans/SKILL.md",
+   "instalar": "npx skills add obra/superpowers --skill executing-plans",
+   "descripcion": "Sigue un plan por tandas y se detiene en puntos de revisión contigo antes de continuar.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "using-git-worktrees",
+   "carpeta": "agents",
+   "autor": "Jesse Vincent",
+   "donde": "Claude Code",
+   "repo": "https://github.com/obra/superpowers",
+   "skill_md": "https://raw.githubusercontent.com/obra/superpowers/main/skills/using-git-worktrees/SKILL.md",
+   "instalar": "npx skills add obra/superpowers --skill using-git-worktrees",
+   "descripcion": "Crea un espacio aislado del proyecto para cada función, así los agentes no se pisan entre sí.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "agents-sdk",
+   "carpeta": "agents",
+   "autor": "Cloudflare",
+   "donde": "Claude Code",
+   "repo": "https://github.com/cloudflare/skills",
+   "skill_md": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/agents-sdk/SKILL.md",
+   "instalar": "npx skills add cloudflare/skills --skill agents-sdk",
+   "descripcion": "Construye agentes que viven en internet con el Agents SDK de Cloudflare: estado propio, tareas programadas y tiempo real.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "viral-hooks",
+   "carpeta": "mkt",
+   "autor": "Vyral",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/vyralcontent/content-skills",
+   "skill_md": "https://raw.githubusercontent.com/vyralcontent/content-skills/main/skills/viral-hooks/SKILL.md",
+   "instalar": "npx skills add vyralcontent/content-skills --skill viral-hooks",
+   "descripcion": "Escribe y critica los primeros 1 a 3 segundos de un video corto, que deciden si alguien sigue viendo.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "viral-short-form",
+   "carpeta": "mkt",
+   "autor": "Vyral",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/vyralcontent/content-skills",
+   "skill_md": "https://raw.githubusercontent.com/vyralcontent/content-skills/main/skills/viral-short-form/SKILL.md",
+   "instalar": "npx skills add vyralcontent/content-skills --skill viral-short-form",
+   "descripcion": "Ideas y guiones de alta retención para TikTok, Reels y YouTube Shorts, también carruseles.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "video",
+   "carpeta": "mkt",
+   "autor": "Corey Haines",
+   "donde": "Claude Code",
+   "repo": "https://github.com/coreyhaines31/marketingskills",
+   "skill_md": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/main/skills/video/SKILL.md",
+   "instalar": "npx skills add coreyhaines31/marketingskills --skill video",
+   "descripcion": "Produce videos con IA o con código y elige la herramienta correcta para cada tipo de video.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "social",
+   "carpeta": "mkt",
+   "autor": "Corey Haines",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/coreyhaines31/marketingskills",
+   "skill_md": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/main/skills/social/SKILL.md",
+   "instalar": "npx skills add coreyhaines31/marketingskills --skill social",
+   "descripcion": "Crea y programa contenido para Instagram, TikTok, LinkedIn, X y Facebook.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "ad-creative",
+   "carpeta": "mkt",
+   "autor": "Corey Haines",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/coreyhaines31/marketingskills",
+   "skill_md": "https://raw.githubusercontent.com/coreyhaines31/marketingskills/main/skills/ad-creative/SKILL.md",
+   "instalar": "npx skills add coreyhaines31/marketingskills --skill ad-creative",
+   "descripcion": "Genera y prueba variaciones de anuncios: titulares, textos y ángulos para cada plataforma.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "build-agent",
+   "carpeta": "biz",
+   "autor": "Anthropic",
+   "donde": "claude.ai (plugin Small Business) · Claude Code",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/knowledge-work-plugins/main/small-business/skills/build-agent/SKILL.md",
+   "instalar": "npx skills add anthropics/knowledge-work-plugins --skill build-agent",
+   "descripcion": "Convierte una tarea que haces a mano cada semana en un agente con nombre que puedes programar.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "business-pulse",
+   "carpeta": "biz",
+   "autor": "Anthropic",
+   "donde": "claude.ai (plugin Small Business) · Claude Code",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/knowledge-work-plugins/main/small-business/skills/business-pulse/SKILL.md",
+   "instalar": "npx skills add anthropics/knowledge-work-plugins --skill business-pulse",
+   "descripcion": "Una página con el estado del negocio: caja, ventas, clientes en proceso y lo más importante de hoy.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "inbox-manager",
+   "carpeta": "biz",
+   "autor": "Anthropic",
+   "donde": "claude.ai (plugin Small Business) · Claude Code",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/knowledge-work-plugins/main/small-business/skills/inbox-manager/SKILL.md",
+   "instalar": "npx skills add anthropics/knowledge-work-plugins --skill inbox-manager",
+   "descripcion": "Convierte un correo lleno en una lista corta de lo que de verdad necesita tu atención, con respuestas en tu voz.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "crm-autopilot",
+   "carpeta": "biz",
+   "autor": "Anthropic",
+   "donde": "claude.ai (plugin Small Business) · Claude Code",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/knowledge-work-plugins/main/small-business/skills/crm-autopilot/SKILL.md",
+   "instalar": "npx skills add anthropics/knowledge-work-plugins --skill crm-autopilot",
+   "descripcion": "Mantiene al día tu lista de clientes desde el correo y el calendario, sin que tengas que abrirla.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "lead-finder",
+   "carpeta": "biz",
+   "autor": "Anthropic",
+   "donde": "claude.ai (plugin Small Business) · Claude Code",
+   "repo": "https://github.com/anthropics/knowledge-work-plugins",
+   "skill_md": "https://raw.githubusercontent.com/anthropics/knowledge-work-plugins/main/small-business/skills/lead-finder/SKILL.md",
+   "instalar": "npx skills add anthropics/knowledge-work-plugins --skill lead-finder",
+   "descripcion": "Arma una lista de prospectos parecidos a tus mejores clientes, cada uno con la razón para contactarlo.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  },
+  {
+   "id": "make-game",
+   "carpeta": "game",
+   "autor": "Playable Intelligence",
+   "donde": "Claude Code",
+   "repo": "https://github.com/playableintelligence/game-creator",
+   "skill_md": "https://raw.githubusercontent.com/playableintelligence/game-creator/main/skills/make-game/SKILL.md",
+   "instalar": "npx skills add playableintelligence/game-creator --skill make-game",
+   "descripcion": "De una idea a un juego de navegador jugable: diseño, proyecto, arte, audio, pruebas y publicación.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "phaser",
+   "carpeta": "game",
+   "autor": "Playable Intelligence",
+   "donde": "Claude Code",
+   "repo": "https://github.com/playableintelligence/game-creator",
+   "skill_md": "https://raw.githubusercontent.com/playableintelligence/game-creator/main/skills/phaser/SKILL.md",
+   "instalar": "npx skills add playableintelligence/game-creator --skill phaser",
+   "descripcion": "Juegos 2D para navegador con Phaser 3, organizados por escenas y con un estado central.",
+   "modo": "Necesita ejecutar código"
+  },
+  {
+   "id": "game-feel",
+   "carpeta": "game",
+   "autor": "gamedev-skills",
+   "donde": "claude.ai · Claude Code",
+   "repo": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+   "skill_md": "https://raw.githubusercontent.com/gamedev-skills/awesome-gamedev-agent-skills/main/skills/disciplines/game-feel/SKILL.md",
+   "instalar": "npx skills add gamedev-skills/awesome-gamedev-agent-skills --skill game-feel",
+   "descripcion": "Hace que cada acción se sienta: sacudida de cámara, congelado al golpear, estirar y aplastar, partículas.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "roblox-luau",
+   "carpeta": "game",
+   "autor": "gamedev-skills",
+   "donde": "Claude Code",
+   "repo": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+   "skill_md": "https://raw.githubusercontent.com/gamedev-skills/awesome-gamedev-agent-skills/main/skills/other-engines/roblox-luau/SKILL.md",
+   "instalar": "npx skills add gamedev-skills/awesome-gamedev-agent-skills --skill roblox-luau",
+   "descripcion": "Programa experiencias de Roblox en Luau, con el servidor como autoridad y RemoteEvents entre cliente y servidor.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "godot-gdscript",
+   "carpeta": "game",
+   "autor": "gamedev-skills",
+   "donde": "Claude Code",
+   "repo": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+   "skill_md": "https://raw.githubusercontent.com/gamedev-skills/awesome-gamedev-agent-skills/main/skills/godot/godot-gdscript/SKILL.md",
+   "instalar": "npx skills add gamedev-skills/awesome-gamedev-agent-skills --skill godot-gdscript",
+   "descripcion": "GDScript idiomático para Godot 4: tipado estático, ciclo de vida de nodos y anotaciones como @export.",
+   "modo": "Funciona solo con leerla"
+  },
+  {
+   "id": "workers-best-practices",
+   "carpeta": "sec",
+   "autor": "Cloudflare",
+   "donde": "Claude Code",
+   "repo": "https://github.com/cloudflare/skills",
+   "skill_md": "https://raw.githubusercontent.com/cloudflare/skills/main/skills/workers-best-practices/SKILL.md",
+   "instalar": "npx skills add cloudflare/skills --skill workers-best-practices",
+   "descripcion": "Revisa Workers de Cloudflare: secretos en el código, tokens predecibles y comparaciones inseguras.",
+   "modo": "Funciona a medias: usa scripts o archivos extra"
+  }
+ ]
+}

@@ -17,3 +17,8 @@ git add -A && git commit -m "..." && git push         # se publica solo
 Datos en `page.html`: `CATS` (carpetas: id, name, color, line, art), `ORDER`, `SKILLS` vía `S(id, cat, autor, dónde, repo, ruta, comando, descripción)`, `MODES` (lee/parcial/codigo), `CAT_ICON` (iconos animados de Lucide), `EX` (ejemplo de cada hoja), `INIT` (interactividad). Máximo 5 skills por carpeta. Ejemplos con la marca ficticia "Lumbre".
 Iconos nuevos: agregarlos al import de `icons-entry.js` y recompilar.
 `urls.txt`: enlaces raw de cada SKILL.md (verificar 200 al agregar skills).
+
+## MCP
+`https://theskillvault.emicros.workers.dev/mcp` (en `worker/index.js`): herramientas `listar_carpetas`, `buscar_skills` y `ver_skill`.
+Lee `public/skills.json`, que `build_cf.py` regenera desde `page.html` (o a mano: `python3 src/export_skills.py`). Skills nuevas: basta con el push.
+Cambios en `worker/index.js` no se publican con el push: hay que subir el Worker (`npx wrangler deploy`).

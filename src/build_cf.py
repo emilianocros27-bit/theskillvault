@@ -10,3 +10,4 @@ for png in pathlib.Path('src/ejemplos-png').glob('*.png'): out = out.replace(f'e
 out = re.sub(r'ejemplos/pptx-\$\{([^}]*)\}\.png', r'ejemplos/pptx-${\1}.webp', out)
 assert '.png' not in re.sub(r'https?://\S+', '', ' '.join(re.findall(r'ejemplos/\S+', out)))
 pathlib.Path(sys.argv[1]).write_text(out); print('ok', len(out))
+import subprocess; subprocess.run([sys.executable, 'src/export_skills.py'], check=True)  # catálogo para el MCP
